@@ -4,6 +4,7 @@ int main ()
 {
     Computadora c01;
     Computadora c02;
+    Computadora c03;
 
     c01=Computadora("Ubuntu 20.04lts","DELL","Intel core i3",4);
 
@@ -11,12 +12,20 @@ int main ()
     c02.setCompany("HP");
     c02.setCpu("Intel pentium");
     c02.setRam(2);
+    
+    cin>>c03;
 
     Laboratorio Comp;
+    /*
+    Comp.agregarFina(c01);
+    Comp.agregarFina(c02);
+    Comp.agregarFina(c03);
+    */
+    Comp>>c01;
+    Comp>>c02;
+    Comp>>c03;
 
-    Comp.agregarFinal(c01);
-    Comp.agregarFinal(c02);
-
+    cout<<endl;
     Comp.mostrar();
 
     cout<<endl<<endl;

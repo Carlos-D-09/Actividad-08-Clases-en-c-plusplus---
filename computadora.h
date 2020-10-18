@@ -38,6 +38,21 @@ class Computadora
                 return os;
         }
 
+        friend istream& operator >> (istream& is, Computadora &obj){
+            
+            cout<<endl<<"Sistema operativo del equipo: ";
+            getline(cin, obj.SystemOperative);
+            cout<<"Fabricante: ";
+            getline(cin, obj.Company);
+            cout<<"Procesador: ";
+            getline(cin,obj.CPU);
+            cout<<"Memoría RAM: ";
+            is>>obj.RAM;
+            cin.ignore();
+
+            return is;
+        }
+
 
             
 };
