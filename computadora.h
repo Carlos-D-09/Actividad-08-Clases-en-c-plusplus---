@@ -2,6 +2,7 @@
 # define cOMPUTADORA_H
 
 #include <iostream>
+#include <iomanip>
 
 using namespace std;
 
@@ -29,6 +30,15 @@ class Computadora
         
         void setRam(int value);
         int getRam();
+
+        friend ostream& operator << (ostream& os, const Computadora &obj){
+            os<<left;
+            os<<endl<<setw(25)<<obj.SystemOperative<<setw(24)<<obj.Company<<setw(21)<<obj.CPU<<setw(20)<<obj.RAM;
+
+                return os;
+        }
+
+
             
 };
 

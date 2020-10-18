@@ -13,6 +13,7 @@ class Laboratorio
     Laboratorio();
     void agregarFinal(const Computadora &c);
     void mostrar();
+
 };
 
 #endif

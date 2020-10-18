@@ -19,6 +19,6 @@ int main ()
 
     Comp.mostrar();
 
-    cout<<endl;
+    cout<<endl<<endl;
     return 0;
 }

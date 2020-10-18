@@ -44,3 +44,4 @@ int Computadora::getRam()
 {
     return RAM;
 }
+
