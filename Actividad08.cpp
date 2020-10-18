@@ -21,9 +21,7 @@ int main ()
     Comp.agregarFina(c02);
     Comp.agregarFina(c03);
     */
-    Comp>>c01;
-    Comp>>c02;
-    Comp>>c03;
+    Comp<<c01<<c02<<c03;
 
     cout<<endl;
     Comp.mostrar();

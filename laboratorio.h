@@ -14,7 +14,7 @@ class Laboratorio
     void agregarFinal(const Computadora &c);
     void mostrar();
 
-    friend Laboratorio& operator >> (Laboratorio &obj, const Computadora &obj2){
+    friend Laboratorio& operator << (Laboratorio &obj, const Computadora &obj2){
         obj.agregarFinal(obj2);
         return obj;
     }
