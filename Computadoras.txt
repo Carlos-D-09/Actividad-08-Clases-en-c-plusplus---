@@ -6,7 +6,7 @@ Windos 10 Enterprise
 HP
 Intel pentium
 2
-Windows 10 home
+Arch linux
 DELL
-Intel Core i3
+Ryzen 2300
 4

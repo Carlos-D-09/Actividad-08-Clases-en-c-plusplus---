@@ -1,11 +1,12 @@
 #include "laboratorio.h"
+#include <fstream>
 
 Laboratorio::Laboratorio()
 {
     cont=0;
 }
 
-void Laboratorio::agregarFinal(const Computadora &c)
+void Laboratorio::agregarFinal(Computadora &c)
 {
     if(cont<5)
     {
@@ -59,4 +60,37 @@ void Laboratorio::respaldar(){
         }
     }
     archivo.close();
+}
+
+void Laboratorio::recuperar(){
+
+    ifstream archivo ("Computadoras.txt");
+    if(archivo.is_open()){
+
+        string aux;
+        int ram;
+        Computadora c;
+
+        while (true){
+            getline(archivo,aux);
+            if(archivo.eof()){
+                break;
+            }
+            c.setSystem(aux);
+
+            getline(archivo,aux);
+            c.setCompany(aux);
+
+            getline(archivo,aux);
+            c.setCpu(aux);
+
+            getline(archivo,aux);
+            ram=stoi(aux);
+            c.setRam(ram);
+            
+            agregarFinal(c);
+        }
+    }
+    archivo.close();  
+
 }

@@ -2,6 +2,10 @@
 
 int main ()
 {
+    Laboratorio value;
+    value.recuperar();
+    value.mostrar();
+   /*
     Computadora c01;
     Computadora c02;
     Computadora c03;
@@ -16,18 +20,16 @@ int main ()
     cin>>c03;
 
     Laboratorio Comp;
-    /*
-    Comp.agregarFina(c01);
-    Comp.agregarFina(c02);
-    Comp.agregarFina(c03);
-    */
+    //Comp.agregarFina(c01);
+    //Comp.agregarFina(c02);
+    //Comp.agregarFina(c03);
     Comp<<c01<<c02<<c03;
 
     cout<<endl;
     Comp.mostrar();
-
     Comp.respaldar_tabla();
     Comp.respaldar();//Linea por linea
+    */
     cout<<endl<<endl;
     return 0;
 }
