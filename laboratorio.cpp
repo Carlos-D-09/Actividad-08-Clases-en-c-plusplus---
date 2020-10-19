@@ -1,5 +1,4 @@
 #include "laboratorio.h"
-#include <fstream>
 
 Laboratorio::Laboratorio()
 {
@@ -15,7 +14,7 @@ void Laboratorio::agregarFinal(Computadora &c)
     }
     else
     {
-        cout<<endl<<"No se pueden resgistrar más equipos";
+        cout<<endl<<"No se pueden resgistrar más equipos"<<endl<<endl;
     }
 }
 

@@ -2,6 +2,7 @@
 #define LABORAORIO_H
 
 #include "computadora.h"
+#include <fstream>
 
 class Laboratorio
 {

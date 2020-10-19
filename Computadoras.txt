@@ -6,7 +6,7 @@ Windos 10 Enterprise
 HP
 Intel pentium
 2
-Arch linux
+Arch Linux
 DELL
-Ryzen 2300
-4
+Ryzen 3900
+8
