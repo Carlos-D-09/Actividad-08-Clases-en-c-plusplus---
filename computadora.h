@@ -52,9 +52,6 @@ class Computadora
 
             return is;
         }
-
-
-            
 };
 
 #endif

@@ -2,6 +2,7 @@
 #define LABORAORIO_H
 
 #include "computadora.h"
+#include <fstream>
 
 class Laboratorio
 {
@@ -13,11 +14,14 @@ class Laboratorio
     Laboratorio();
     void agregarFinal(const Computadora &c);
     void mostrar();
+    void respaldar_tabla();
+    void respaldar();
 
     friend Laboratorio& operator << (Laboratorio &obj, const Computadora &obj2){
         obj.agregarFinal(obj2);
         return obj;
     }
+
 };
 
 #endif

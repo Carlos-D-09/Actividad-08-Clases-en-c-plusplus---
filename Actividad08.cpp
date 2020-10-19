@@ -26,6 +26,8 @@ int main ()
     cout<<endl;
     Comp.mostrar();
 
+    Comp.respaldar_tabla();
+    Comp.respaldar();//Linea por linea
     cout<<endl<<endl;
     return 0;
 }

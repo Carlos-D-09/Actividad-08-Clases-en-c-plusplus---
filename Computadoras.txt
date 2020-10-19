@@ -1,0 +1,12 @@
+Ubuntu 20.04lts
+DELL
+Intel core i3
+4
+Windos 10 Enterprise
+HP
+Intel pentium
+2
+Windows 10 home
+DELL
+Intel Core i3
+4
